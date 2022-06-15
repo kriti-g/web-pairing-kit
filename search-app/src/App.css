@@ -1,0 +1,94 @@
+.search-toolbar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 16px;
+}
+
+.search-box {
+  padding: 6px;
+  margin-top: 8px;
+}
+
+.search-button {
+  padding: 7px;
+  margin-top: 8px;
+  border: none;
+}
+
+.sort-dropdown {
+  width: 80px;
+}
+
+.sort-dropdown-icon {
+  padding: 7px;
+  margin-top: 8px;
+  border: none;
+  font-size: 14px;
+  width: 100%;
+}
+
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 80px;
+}
+
+.dropdown-option {
+  padding: 7px;
+  border: none;
+  font-size: 12px;
+}
+
+.activity {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  box-shadow: 0px 2px 4px 0px gray;
+  height: 100%;
+  margin-bottom: 32px;
+}
+
+.price-rating-container {
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user-rating {
+  margin-left: auto;
+}
+
+.activity-list {
+  list-style-type: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 600px) {
+  .activity-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 38px
+  }
+}
+
+@media (min-width: 992px) {
+  .activity-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+.App {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 24px);
+  max-width: 1366px;
+  margin: 0 auto;
+}
